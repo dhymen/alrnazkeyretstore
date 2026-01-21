@@ -52,21 +52,26 @@
     nav a:hover { opacity: .6; }
 
     /* Hero */
-    .hero {
+    .catalog-hero {
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("images/model-bg1.jpg") center/cover no-repeat;
+      padding: 120px 20px 100px;
       text-align: center;
-      padding: 70px 20px;
-      background: #fff;
-      border-left: 6px solid var(--accent);
+      color: #fff;
     }
-    .hero h2 {
-      font-size: 32px;
+    
+    .catalog-hero h2 {
+      font-size: 36px;
+      letter-spacing: 2px;
       margin-bottom: 12px;
-      font-weight: 600;
     }
-    .hero p {
-      color: #666;
+
+    .catalog-hero p {
       max-width: 600px;
       margin: auto;
+      font-size: 15px;
+      opacity: 0.85;
     }
 
     /* Container */
@@ -105,8 +110,8 @@
     /* Products */
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
     }
     .card {
       background: #fff;
@@ -138,7 +143,7 @@
     .size { font-size: 13px; color: #777; }
     .price { font-weight: 600; margin: 10px 0; }
     .desc { font-size: 14px; color: #555; line-height: 1.6; }
-
+   
     .btn {
       display: block;
       margin-top: 15px;
@@ -171,12 +176,23 @@
     }
 
     /* Footer */
-    footer {
-      background: #111;
-      color: #aaa;
+    .catalog-footer {
+      background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url("images/urban-bg3.jpg") center/cover no-repeat;
+      padding: 90px 20px;
       text-align: center;
-      padding: 25px 20px;
-      font-size: 13px;
+      color: #fff;
+    }
+
+    .catalog-footer h3 {
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .catalog-footer p {
+      font-size: 14px;
+      opacity: 0.8;
     }
 
     @media(max-width:600px){
@@ -197,12 +213,15 @@
   <a href="#kontak">Kontak</a>
 </nav>
 
-<section class="hero">
+<section class="hero catalog-hero">
   <h2>Minimalist Clothing for Everyday Style</h2>
   <p>Pakaian unisex dengan desain simpel, bahan nyaman, dan cocok untuk digunakan setiap hari.</p>
 </section>
 
-<div class="container" id="produk">
+<section class="catalog-section">
+  <div class="container" id="produk">
+  </div>
+</section>
   <h2 class="section-title">Koleksi Terbaru</h2>
 
   <div class="filter">
@@ -236,7 +255,7 @@
         <a class="btn" href="https://wa.me/628979986732">Order via WhatsApp</a>
       </div>
     </div>
-
+  
     <div class="card" data-category="hoodie">
       <img src="images/produk1.jpg" alt="Kaos Basic Hitam">
       <div class="card-content">
@@ -260,7 +279,7 @@
         <a class="btn" href="https://wa.me/628979986732">Order via WhatsApp</a>
       </div>
     </div>
-
+  
     <div class="card" data-category="kaos">
       <img src="images/produk1.jpg" alt="Kaos Basic Hitam">
       <div class="card-content">
@@ -370,9 +389,14 @@
 
 <section class="contact" id="kontak">
   <h2>Kontak & Pemesanan</h2>
-  <p>📱 WhatsApp: 08979986732</p>
+  <p>📱 WhatsApp: +62 897-9986-732</p>
   <p>📧 Email: ardhysurya095@gmail.com</p>
   <p>📍 Pengiriman dari Jakarta</p>
+</section>
+
+<section class="catalog-footer">
+  <h3>BUILT FOR THE STREETS</h3>
+  <p>Minimal wear for modern urban movement</p>
 </section>
 
 <footer>
